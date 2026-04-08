@@ -47,7 +47,14 @@ with col1:
 with col2:
     weight = st.number_input("Patient Weight (kg)", min_value=0.0, max_value=300.0, value=70.0)
     report_source = st.selectbox("Report Source", [
-        "Not Specified", "Study", "Literature", "Spontaneous", "Other"
+        "Not Specified",
+        "Health Professional",
+        "Consumer",
+        "Health Professional ,Literature",
+        "Health Professional ,Foreign",
+        "Consumer,Literature",
+        "User Facility",
+        "Other,Health Professional"
     ])
 
 reactions = st.text_area(
