@@ -11,6 +11,15 @@ st.set_page_config(
     layout="centered"
 )
 
+# ── Background gradient ───────────────────────────────────────────────────────
+st.markdown("""
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # ── Load models ───────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_artifacts():
