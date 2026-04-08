@@ -40,8 +40,10 @@ with col1:
     age = st.number_input("Patient Age (Years)", min_value=0, max_value=120, value=50)
     sex = st.selectbox("Sex", ["Male", "Female", "Unknown"])
     reporter_type = st.selectbox("Reporter Type", [
-        "Healthcare Professional", "Consumer", "Physician",
-        "Pharmacist", "Lawyer", "Not Specified"
+        "Healthcare Professional",
+        "Consumer",
+        "Not Specified",
+        "Other"
     ])
 
 with col2:
