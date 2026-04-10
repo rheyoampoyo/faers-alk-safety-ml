@@ -101,15 +101,17 @@ col1, col2 = st.columns(2)
 with col1:
     age = st.number_input("Patient Age (Years)", min_value=0, max_value=120, value=50)
     sex = st.selectbox("Sex", ["Male", "Female", "Unknown"])
+
+
+with col2:
+    weight = st.number_input("Patient Weight (kg)", min_value=0.0, max_value=300.0, value=70.0)
+    
     reporter_type = st.selectbox("Reporter Type", [
         "Healthcare Professional",
         "Consumer",
         "Not Specified",
         "Other"
     ])
-
-with col2:
-    weight = st.number_input("Patient Weight (kg)", min_value=0.0, max_value=300.0, value=70.0)
     
 suspect_drugs = st.multiselect(
     "Suspect Drugs (select all that apply)",
